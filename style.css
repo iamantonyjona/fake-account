@@ -50,12 +50,6 @@ html {
   display: none; /* Hide scrollbar in WebKit browsers */
 }
 
-/* Prevent scrolling while Preloader is active */
-body.preloader-active {
-  overflow: hidden;
-  position: fixed;
-  width: 100%;
-}
 .loader {
   display: flex;
   align-items: center;
