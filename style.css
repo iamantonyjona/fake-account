@@ -261,7 +261,7 @@ img.homebg {
 }
 .home-header h1 {
   color: #fff;
-  font-size: 5rem;
+  font-size: 4rem;
 }
 .home-content {
   color: #fff;
@@ -414,7 +414,7 @@ section.team {
   overflow: hidden;
 }
 h1.team-header {
-  font-size: 4rem;
+  font-size: 3.6rem;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -567,7 +567,7 @@ h1.tools-header::after {
 .face.front b {
   margin: 0;
   padding: 0;
-  font-size: 4em;
+  font-size: 3em;
   color: #ff3cac;
   transition: 0.5s;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
