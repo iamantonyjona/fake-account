@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Account Detection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Fake Account Detection</a>
+                <input type="checkbox" id="checkbox" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <label for="checkbox" class="toggle">
+                    <div class="bars" id="bar1"></div>
+                    <div class="bars" id="bar2"></div>
+                    <div class="bars" id="bar3"></div>
+                </label>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="detection.html">Account Detection</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Account Detection Form -->
+    <section class="form">
+        <div class="container mt-5">
+            <h2 class="text-center">Fake Account Detection</h2>
+            <div class="card ">
+                <label for="username" class="form-label">Enter Username:</label>
+                <input type="text" id="username" class="form-control mb-3" placeholder="Enter Username">
+
+                <label for="followers" class="form-label">Enter Followers Count:</label>
+                <input type="number" id="followers" class="form-control mb-3" placeholder="Number of Followers">
+
+                <label for="posts" class="form-label">Enter Post Count:</label>
+                <input type="number" id="posts" class="form-control mb-3" placeholder="Number of Posts">
+
+                <button onclick="checkAccount()" class="btn btn-primary">Check Account</button>
+                <p id="fakeMessage" class="mt-3 fw-bold text-danger d-none">❌ Your account is fake!</p>
+
+                <!-- Real Account Container (Initially Hidden) -->
+                <div id="realAccountContainer" class="card mt-3 p-3 d-none">
+                    <h4 class="text-success">✅ This is a Real Account</h4>
+                    <p><strong>Username:</strong> <span id="displayUsername"></span></p>
+                    <p><strong>Followers:</strong> <span id="displayFollowers"></span></p>
+                    <p><strong>Posts:</strong> <span id="displayPosts"></span></p>
+                </div>
+            </div>
+        </div>
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
