@@ -316,7 +316,7 @@ span#displayPosts {
 
 @media (max-width: 576px) {
     .container {
-        max-width: 100%;
+        max-width: 95%;
         padding: 15px;
     }
 }
