@@ -30,11 +30,12 @@
             </div>
         </nav>
     </div>
+
     <!-- Account Detection Form -->
     <section class="form">
         <div class="container mt-5">
             <h2 class="text-center">Fake Account Detection</h2>
-            <div class="card ">
+            <div class="card">
                 <label for="username" class="form-label">Enter Username:</label>
                 <input type="text" id="username" class="form-control mb-3" placeholder="Enter Username">
 
@@ -57,18 +58,28 @@
             </div>
         </div>
         <ul class="circles">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li></li><li></li><li></li><li></li><li></li>
+            <li></li><li></li><li></li><li></li><li></li>
         </ul>
     </section>
+
+    <!-- Toggle functionality script -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const checkbox = document.getElementById('checkbox');
+            const navbarNav = document.getElementById('navbarNav');
+
+            checkbox.addEventListener('change', function () {
+                if (checkbox.checked) {
+                    navbarNav.classList.add('show');
+                } else {
+                    navbarNav.classList.remove('show');
+                }
+            });
+        });
+    </script>
+
+    <!-- Detection logic script -->
     <script src="script.js"></script>
 </body>
 </html>
